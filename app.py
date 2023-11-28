@@ -25,7 +25,7 @@ def main():
 > Sahih al-Bukhari 6011""")
 
     # Upload image through Streamlit
-    uploaded_image = st.file_uploader("Upload an image...", type=["jpg", "jpeg", "png"])
+    uploaded_image = st.file_uploader("Upload an image with 1:1 aspect ratio", type=["jpg", "jpeg", "png"])
 
     if uploaded_image is not None:
         # Display the uploaded image

@@ -16,20 +16,14 @@ def apply_frame(image: Image):
     return image
 
 def main():
-    # st.title("Show your support for Palestine!")
-    st.title("Speak Up for Palestine!")
+    st.title("Add a Palestine frame to your photo")
 
-    st.markdown("""\
-> Allah's Messenger (ﷺ) said, *"You see the believers as regards their being merciful among themselves and showing love among themselves and being kind, resembling one body, so that, if any part of the body is not well then the whole body shares the sleeplessness (insomnia) and fever with it."*
-> 
-> Sahih al-Bukhari 6011""")
+    st.image(Image.open("thumbnail.png"), caption="", use_column_width=True)
 
     # Upload image through Streamlit
     uploaded_image = st.file_uploader("Upload an image with 1:1 aspect ratio", type=["jpg", "jpeg", "png"])
 
     if uploaded_image is not None:
-        # Display the uploaded image
-        # st.image(uploaded_image, caption="Original Image", use_column_width=True)
 
         # Apply the frame to the image
         result = apply_frame(Image.open(uploaded_image))

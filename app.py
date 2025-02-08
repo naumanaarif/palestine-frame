@@ -47,7 +47,7 @@ def main():
 
 
     st.markdown("---")
-    st.markdown('<p style="text-align: center; color: gray;">Made with ❤️ by <a style="color: gray; font-weight:600;" href="https://github.com/naumanaarif">Nauman A.</a></p>', unsafe_allow_html=True)
+    st.markdown('<p style="text-align: center; color: gray;"><a style="color: gray; font-weight:600;" href="https://donate.unrwa.org/int/en/general">Donate</a> for Palestine</p>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main()
